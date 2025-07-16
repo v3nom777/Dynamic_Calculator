@@ -2,16 +2,15 @@ function dis(n){
     console.log(`Button ${n} pressed`)  
     document.getElementById("result").innerHTML+= n
 }
-function solv(){
+function solve(){
     try{
         var s= document.getElementById("result").innerHTML;
         console.log(s);
         document.getElementById("result").innerHTML = eval(s)
-        console.log(`Button ${n} pressed`)  
-    
+        console.log(`Button pressed`)  
     }
     catch (error){
- alert("wrong information format");
+ console.log("wrong information format");
     }
    
 }
